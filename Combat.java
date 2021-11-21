@@ -11,10 +11,15 @@ public class Combat {
     private ArrayList<Habitant> listeCombattant ;
     private ArrayList<Casque> listeCasqueRapporte;
 
-    public Combat(String nom, String lieu, Date dateDebut){
+    public Combat(String nom){
         setNom(nom);
-        setLieu(lieu);
-        setDateDebut(dateDebut);
+    }
+
+    public void AjouterCombattant(Habitant h){
+        getListeCombattant().add(h);
+    }
+    public void AjouterCasque(Casque c){
+        getListeCasqueRapporte().add(c);
     }
 
     public String getNom() {

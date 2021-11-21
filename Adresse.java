@@ -1,6 +1,7 @@
 public class Adresse extends Quartier{
     private String voie;
     private int numero;
+    private Quartier quartier;
 
     public Adresse(String nom, String drapeau){
         super(nom, drapeau);
@@ -20,5 +21,12 @@ public class Adresse extends Quartier{
     }
     public void setNumero(int numero) {
         this.numero = numero;
+    }
+
+    public Quartier getQuartier() {
+        return quartier;
+    }
+    public void setQuartier(Quartier quartier) {
+        this.quartier = quartier;
     }
 }
